@@ -1,5 +1,8 @@
+import java.util.regex.Matcher
+
 plugins {
     id 'org.springframework.boot' version '2.1.4.RELEASE'
+    id 'net.researchgate.release' version '2.6.0'
     id 'java'
 }
 
