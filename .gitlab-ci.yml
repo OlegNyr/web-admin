@@ -12,6 +12,7 @@ variables:
 
 before_script:
   - echo `pwd` # debug
+  - env
   - echo "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" # debug
   - export GRADLE_USER_HOME="/cache/$CI_PROJECT_NAME/gradle"
 build:
