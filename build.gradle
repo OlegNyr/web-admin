@@ -97,8 +97,8 @@ release {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-echo "user=" + findProperty("username")
-echo "ppp=\"" + findProperty("password")+"\""
+println "user=" + findProperty("username")
+println "ppp=\"" + findProperty("password")+"\""
 apply plugin: 'maven-publish'
 publishing {
     publications {
