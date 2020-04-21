@@ -59,7 +59,7 @@ deploy_prod:
     - git config --global user.email $GIT_ACCESS_EMAIL
     - git checkout $CI_BUILD_REF_NAME
     - git status
-    - ./gradlew release -Prelease.useAutomaticVersion=true
+    - ./gradlew release -Prelease.useAutomaticVersion=true --stacktrace
   cache:
     untracked: true
     policy: pull
