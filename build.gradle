@@ -97,7 +97,6 @@ release {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-print  "username: "+findProperty("username")
 apply plugin: 'maven-publish'
 publishing {
     publications {
@@ -108,8 +107,8 @@ publishing {
     repositories {
         maven {
             credentials {
-                username findProperty("username")
-                password findProperty("password")
+                username = findProperty("username")
+                password = findProperty("password")
             }
             def dir = 'https://dev.agria.pro/nexus/repository'
             def releasesRepoUrl = "${dir}/maven-releases"
